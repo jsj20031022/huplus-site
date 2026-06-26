@@ -13,6 +13,40 @@
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://huplus.asia/" />
 
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "HuPlus",
+    "url": "https://huplus.asia",
+    "description": "Discover the best AI tools for Asian creators, developers and entrepreneurs. Curated directory updated weekly.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://huplus.asia/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"ChatGPT","url":"https://chat.openai.com"},
+      {"@type":"ListItem","position":2,"name":"Claude","url":"https://claude.ai"},
+      {"@type":"ListItem","position":3,"name":"Midjourney","url":"https://www.midjourney.com"},
+      {"@type":"ListItem","position":4,"name":"GitHub Copilot","url":"https://github.com/features/copilot"},
+      {"@type":"ListItem","position":5,"name":"ElevenLabs","url":"https://elevenlabs.io"},
+      {"@type":"ListItem","position":6,"name":"Perplexity AI","url":"https://www.perplexity.ai"},
+      {"@type":"ListItem","position":7,"name":"Suno","url":"https://suno.com"},
+      {"@type":"ListItem","position":8,"name":"Runway ML","url":"https://runwayml.com"},
+      {"@type":"ListItem","position":9,"name":"Zapier AI","url":"https://zapier.com/ai"},
+      {"@type":"ListItem","position":10,"name":"Canva AI","url":"https://www.canva.com/ai-image-generator/"}
+    ]
+  }
+  </script>
+
   <!-- Google AdSense（申请通过后替换 ca-pub-XXXXXXXXXXXXXXXX） -->
   <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
 
@@ -366,7 +400,7 @@
     <ul class="nav-links">
       <li><a href="#categories">Categories</a></li>
       <li><a href="#trending">Trending</a></li>
-      <li><a href="#new">New Tools</a></li>
+      <li><a href="advertise.html">Advertise</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
     <a class="nav-submit" href="submit.html">Submit Tool</a>
@@ -376,7 +410,7 @@
 <!-- HERO -->
 <section class="hero">
   <h1>The Best AI Tools for Asia's Builders</h1>
-  <p>Discover, compare and use 100+ curated AI tools for creators, developers and entrepreneurs across Asia. Updated weekly.</p>
+  <p>Discover, compare and use 70+ hand-picked AI tools across 12 categories — updated weekly for creators, developers and entrepreneurs across Asia.</p>
   <div class="search-wrap">
     <input type="text" id="searchInput" placeholder="Search AI tools... e.g. video, writing, code" />
     <button onclick="doSearch()">Search</button>
@@ -386,7 +420,7 @@
 <!-- STATS BAR -->
 <div class="stats-bar">
   <div class="stats-inner">
-    <div class="stat"><strong>120+</strong> AI Tools</div>
+    <div class="stat"><strong>70+</strong> AI Tools</div>
     <div class="stat"><strong>12</strong> Categories</div>
     <div class="stat"><strong>Weekly</strong> Updates</div>
     <div class="stat"><strong>Free</strong> to Use</div>
@@ -400,16 +434,19 @@
   <aside class="sidebar">
     <div class="sidebar-title">Categories</div>
     <ul class="cat-list" id="catList">
-      <li class="cat-item"><a href="#" class="active" data-cat="all"><span class="cat-icon">🔍</span>All Tools<span class="cat-count">120</span></a></li>
-      <li class="cat-item"><a href="#" data-cat="writing"><span class="cat-icon">✍️</span>Writing<span class="cat-count">22</span></a></li>
-      <li class="cat-item"><a href="#" data-cat="image"><span class="cat-icon">🎨</span>Image &amp; Design<span class="cat-count">18</span></a></li>
-      <li class="cat-item"><a href="#" data-cat="video"><span class="cat-icon">🎬</span>Video<span class="cat-count">14</span></a></li>
-      <li class="cat-item"><a href="#" data-cat="code"><span class="cat-icon">💻</span>Coding<span class="cat-count">16</span></a></li>
-      <li class="cat-item"><a href="#" data-cat="productivity"><span class="cat-icon">⚡</span>Productivity<span class="cat-count">12</span></a></li>
-      <li class="cat-item"><a href="#" data-cat="chatbot"><span class="cat-icon">🤖</span>Chatbots<span class="cat-count">10</span></a></li>
-      <li class="cat-item"><a href="#" data-cat="seo"><span class="cat-icon">📈</span>SEO &amp; Marketing<span class="cat-count">14</span></a></li>
-      <li class="cat-item"><a href="#" data-cat="audio"><span class="cat-icon">🎵</span>Audio &amp; Voice<span class="cat-count">8</span></a></li>
+      <li class="cat-item"><a href="#" class="active" data-cat="all"><span class="cat-icon">🔍</span>All Tools<span class="cat-count">70</span></a></li>
+      <li class="cat-item"><a href="#" data-cat="chatbot"><span class="cat-icon">🤖</span>Chatbots<span class="cat-count">8</span></a></li>
+      <li class="cat-item"><a href="#" data-cat="writing"><span class="cat-icon">✍️</span>Writing<span class="cat-count">8</span></a></li>
+      <li class="cat-item"><a href="#" data-cat="image"><span class="cat-icon">🎨</span>Image &amp; Design<span class="cat-count">8</span></a></li>
+      <li class="cat-item"><a href="#" data-cat="video"><span class="cat-icon">🎬</span>Video<span class="cat-count">7</span></a></li>
+      <li class="cat-item"><a href="#" data-cat="code"><span class="cat-icon">💻</span>Coding<span class="cat-count">7</span></a></li>
+      <li class="cat-item"><a href="#" data-cat="productivity"><span class="cat-icon">⚡</span>Productivity<span class="cat-count">6</span></a></li>
+      <li class="cat-item"><a href="#" data-cat="seo"><span class="cat-icon">📈</span>SEO &amp; Marketing<span class="cat-count">6</span></a></li>
+      <li class="cat-item"><a href="#" data-cat="audio"><span class="cat-icon">🎵</span>Audio &amp; Voice<span class="cat-count">5</span></a></li>
       <li class="cat-item"><a href="#" data-cat="business"><span class="cat-icon">💼</span>Business<span class="cat-count">6</span></a></li>
+      <li class="cat-item"><a href="#" data-cat="data"><span class="cat-icon">📊</span>Data &amp; Analytics<span class="cat-count">5</span></a></li>
+      <li class="cat-item"><a href="#" data-cat="education"><span class="cat-icon">🎓</span>Education<span class="cat-count">5</span></a></li>
+      <li class="cat-item"><a href="#" data-cat="ecommerce"><span class="cat-icon">🛒</span>E-commerce<span class="cat-count">4</span></a></li>
     </ul>
 
     <!-- Sidebar Ad Slot -->
@@ -493,113 +530,254 @@
 <script>
 // ── TOOL DATA ──────────────────────────────────────────────────
 const tools = [
-  // CHATBOTS
+  // CHATBOTS — 8
   { name: "ChatGPT", cat: "chatbot", logo: "🤖", color: "#10a37f", badge: "hot", free: true,
-    desc: "The world's most popular AI chatbot by OpenAI. Ideal for writing, analysis, coding and brainstorming.",
-    tags: ["OpenAI", "GPT-4o", "API"], url: "https://chat.openai.com" },
+    desc: "The world's most popular AI chatbot by OpenAI. GPT-4o excels at writing, analysis, coding, and brainstorming with multimodal capabilities including image understanding and voice conversation.",
+    tags: ["OpenAI", "GPT-4o", "Multimodal"], url: "https://chat.openai.com" },
   { name: "Claude", cat: "chatbot", logo: "🧠", color: "#d97706", badge: "hot", free: true,
-    desc: "Anthropic's Claude excels at long documents, nuanced reasoning and safe, helpful conversation.",
-    tags: ["Anthropic", "Long context", "Safe AI"], url: "https://claude.ai" },
+    desc: "Anthropic's Claude 3.5 Sonnet excels at long documents (200K context), nuanced reasoning, code generation, and safe, helpful conversation with enterprise-grade reliability.",
+    tags: ["Anthropic", "200K context", "Enterprise"], url: "https://claude.ai" },
   { name: "Gemini", cat: "chatbot", logo: "✨", color: "#4285f4", badge: "new", free: true,
-    desc: "Google's multimodal AI assistant, deeply integrated with Google Workspace and Search.",
-    tags: ["Google", "Multimodal", "Search"], url: "https://gemini.google.com" },
+    desc: "Google's multimodal AI assistant with 1M token context window. Deeply integrated with Google Workspace, Search, and Android for seamless productivity across devices.",
+    tags: ["Google", "1M tokens", "Workspace"], url: "https://gemini.google.com" },
+  { name: "Perplexity AI", cat: "chatbot", logo: "🔍", color: "#1e1e1e", badge: "hot", free: true,
+    desc: "AI-powered search engine that delivers accurate, cited answers with real-time web research. Combines the best of search engines and AI assistants with source transparency.",
+    tags: ["Search", "Citations", "Research"], url: "https://www.perplexity.ai" },
+  { name: "DeepSeek", cat: "chatbot", logo: "🐋", color: "#4f46e5", badge: "hot", free: true,
+    desc: "Open-source Chinese AI model rivaling GPT-4 at a fraction of the cost. Strong in reasoning, math, and coding with a generous free tier and API access.",
+    tags: ["Open source", "Chinese", "Reasoning"], url: "https://deepseek.com" },
+  { name: "Poe", cat: "chatbot", logo: "📬", color: "#6d28d9", badge: "free", free: true,
+    desc: "Quora's AI aggregator giving access to ChatGPT, Claude, Gemini, and dozens of other models in one place. Compare responses side-by-side and create custom bots.",
+    tags: ["Multi-model", "Quora", "Bots"], url: "https://poe.com" },
+  { name: "Character.AI", cat: "chatbot", logo: "🎭", color: "#ec4899", badge: "free", free: true,
+    desc: "Create and chat with AI characters — from historical figures to fictional personalities. Popular for creative roleplay, language practice, and entertainment.",
+    tags: ["Characters", "Roleplay", "Creative"], url: "https://character.ai" },
+  { name: "Kimi", cat: "chatbot", logo: "🌙", color: "#6366f1", badge: "new", free: true,
+    desc: "Moonshot AI's long-context Chinese chatbot with 200K token support. Excellent at processing lengthy documents, PDFs, and web content with native Chinese understanding.",
+    tags: ["Chinese", "Long context", "PDF"], url: "https://kimi.moonshot.cn" },
 
-  // WRITING
+  // WRITING — 8
   { name: "Jasper AI", cat: "writing", logo: "📝", color: "#7c3aed", badge: "paid", free: false,
-    desc: "AI copywriting platform loved by marketing teams. Generates ads, blogs, emails and more at scale.",
-    tags: ["Copywriting", "Marketing", "Templates"], url: "https://www.jasper.ai" },
+    desc: "Enterprise AI copywriting platform for marketing teams. Generates brand-consistent ads, blogs, emails and product descriptions at scale with built-in tone and style controls.",
+    tags: ["Enterprise", "Marketing", "Brand voice"], url: "https://www.jasper.ai" },
   { name: "Copy.ai", cat: "writing", logo: "✍️", color: "#2563eb", badge: "free", free: true,
-    desc: "Free AI writer for sales copy, social media, product descriptions and long-form content.",
-    tags: ["Free plan", "Sales copy", "Social media"], url: "https://www.copy.ai" },
+    desc: "Free AI writer with powerful workflows for sales copy, social media posts, product descriptions, and long-form content. Great for startups and small marketing teams.",
+    tags: ["Free", "Workflows", "GTM"], url: "https://www.copy.ai" },
   { name: "Notion AI", cat: "writing", logo: "📒", color: "#000000", badge: "new", free: false,
-    desc: "AI built right into Notion — summarize pages, draft documents and auto-fill databases.",
-    tags: ["Notion", "Workspace", "Docs"], url: "https://www.notion.so/product/ai" },
+    desc: "AI built directly into your Notion workspace — summarize meeting notes, draft documents, translate content, and auto-fill databases without switching tools.",
+    tags: ["Notion", "Workspace", "Automation"], url: "https://www.notion.so/product/ai" },
   { name: "Writesonic", cat: "writing", logo: "⚡", color: "#f59e0b", badge: "hot", free: true,
-    desc: "AI writing assistant that creates SEO-optimized articles, ads and landing pages in minutes.",
-    tags: ["SEO", "Articles", "Ads"], url: "https://writesonic.com" },
+    desc: "AI writing platform that creates SEO-optimized articles, landing pages, and ad copy. Includes a built-in SEO checker to help your content rank higher on Google.",
+    tags: ["SEO", "Articles", "Landing pages"], url: "https://writesonic.com" },
+  { name: "Grammarly", cat: "writing", logo: "✅", color: "#15c39a", badge: "free", free: true,
+    desc: "AI writing assistant that checks grammar, tone, clarity, and plagiarism. Works across email, docs, social media, and your browser with real-time suggestions.",
+    tags: ["Grammar", "Tone", "Browser"], url: "https://www.grammarly.com" },
+  { name: "Rytr", cat: "writing", logo: "📄", color: "#ff6b35", badge: "free", free: true,
+    desc: "Budget-friendly AI writer with 30+ content templates. Generate blog posts, emails, and marketing copy quickly. Supports 30+ languages with a generous free plan.",
+    tags: ["Budget", "Templates", "Multilingual"], url: "https://rytr.me" },
+  { name: "QuillBot", cat: "writing", logo: "🔄", color: "#4ade80", badge: "free", free: true,
+    desc: "AI paraphrasing and summarization tool trusted by millions of students and writers. Rewrite, summarize, check grammar, and detect AI-generated text in one platform.",
+    tags: ["Paraphrase", "Academic", "Summarizer"], url: "https://quillbot.com" },
+  { name: "Sudowrite", cat: "writing", logo: "📖", color: "#a855f7", badge: "paid", free: false,
+    desc: "AI creative writing tool designed for fiction authors. Generate story ideas, develop characters, expand scenes, and get feedback on your narrative flow.",
+    tags: ["Fiction", "Creative", "Novels"], url: "https://www.sudowrite.com" },
 
-  // IMAGE & DESIGN
+  // IMAGE & DESIGN — 8
   { name: "Midjourney", cat: "image", logo: "🎨", color: "#6d28d9", badge: "hot", free: false,
-    desc: "The gold standard in AI image generation. Creates stunning, artistic visuals from text prompts.",
-    tags: ["Image gen", "Art", "Discord"], url: "https://www.midjourney.com" },
+    desc: "The gold standard in AI image generation. V6 produces stunning, photorealistic and artistic visuals from text. Beloved by designers, artists, and creative professionals worldwide.",
+    tags: ["Photorealistic", "Art", "Discord"], url: "https://www.midjourney.com" },
   { name: "DALL·E 3", cat: "image", logo: "🖼️", color: "#10a37f", badge: "hot", free: true,
-    desc: "OpenAI's latest image model, built into ChatGPT Plus. Understands nuanced prompts with precision.",
-    tags: ["OpenAI", "Text-to-image", "ChatGPT"], url: "https://openai.com/dall-e-3" },
+    desc: "OpenAI's most advanced image model, built into ChatGPT Plus. Understands nuanced, complex prompts with remarkable precision and renders accurate text in images.",
+    tags: ["OpenAI", "Text-in-image", "ChatGPT"], url: "https://openai.com/dall-e-3" },
   { name: "Canva AI", cat: "image", logo: "🎭", color: "#00c4cc", badge: "free", free: true,
-    desc: "Magic Studio brings AI design to Canva. Generate images, remove backgrounds, and auto-design.",
-    tags: ["Design", "Free", "Templates"], url: "https://www.canva.com/ai-image-generator/" },
+    desc: "Magic Studio brings AI-powered design to Canva's massive template library. Generate images, remove backgrounds, auto-resize, and create presentations with AI assistance.",
+    tags: ["Templates", "Magic Studio", "Presentation"], url: "https://www.canva.com/ai-image-generator/" },
   { name: "Adobe Firefly", cat: "image", logo: "🦋", color: "#ff0000", badge: "new", free: true,
-    desc: "Adobe's generative AI, commercially safe and integrated into Photoshop, Illustrator and Express.",
-    tags: ["Adobe", "Commercial use", "Photoshop"], url: "https://firefly.adobe.com" },
+    desc: "Adobe's commercially safe generative AI, trained on licensed content. Integrated into Photoshop, Illustrator, and Express for professional design workflows.",
+    tags: ["Adobe", "Commercial-safe", "Photoshop"], url: "https://firefly.adobe.com" },
   { name: "Stable Diffusion", cat: "image", logo: "🌊", color: "#1d4ed8", badge: "free", free: true,
-    desc: "Open-source image generation model. Run locally for free or use via online platforms.",
-    tags: ["Open source", "Free", "Local"], url: "https://stability.ai" },
+    desc: "Leading open-source image generation model. Run locally for free with tools like Automatic1111 or ComfyUI. Full control, no censorship, no usage limits.",
+    tags: ["Open source", "Local", "Unlimited"], url: "https://stability.ai" },
+  { name: "Leonardo AI", cat: "image", logo: "🦁", color: "#f97316", badge: "free", free: true,
+    desc: "AI image generator built for game assets and concept art. Features include real-time canvas, model training on your own style, and production-ready output.",
+    tags: ["Game assets", "Canvas", "Fine-tuning"], url: "https://leonardo.ai" },
+  { name: "Remove.bg", cat: "image", logo: "✂️", color: "#10b981", badge: "free", free: true,
+    desc: "One-click AI background removal that works in seconds. Process thousands of images via API. Used by e-commerce, photography, and design professionals globally.",
+    tags: ["Background", "API", "E-commerce"], url: "https://www.remove.bg" },
+  { name: "Ideogram", cat: "image", logo: "🔤", color: "#000000", badge: "new", free: true,
+    desc: "AI image generator specializing in accurate text rendering within images. Perfect for logos, typography designs, and any visual where precise text matters.",
+    tags: ["Typography", "Logos", "Text accuracy"], url: "https://ideogram.ai" },
 
-  // VIDEO
+  // VIDEO — 7
   { name: "Runway ML", cat: "video", logo: "🎬", color: "#7c3aed", badge: "hot", free: true,
-    desc: "Professional AI video editor and generator. Gen-2 turns text or images into stunning video clips.",
-    tags: ["Video gen", "Editing", "Gen-2"], url: "https://runwayml.com" },
+    desc: "Professional AI video suite: text-to-video with Gen-3 Alpha, advanced video editing, background removal, motion tracking, and real-time collaboration for creative teams.",
+    tags: ["Gen-3", "VFX", "Collaboration"], url: "https://runwayml.com" },
   { name: "HeyGen", cat: "video", logo: "🎥", color: "#059669", badge: "hot", free: true,
-    desc: "Create AI avatar videos with human presenters. Perfect for marketing, training and social content.",
-    tags: ["Avatar", "Marketing", "Multilingual"], url: "https://www.heygen.com" },
+    desc: "Create lifelike AI avatar videos with human presenters speaking any language. Perfect for corporate training, marketing videos, and personalized social media content.",
+    tags: ["Avatar", "Multilingual", "Corporate"], url: "https://www.heygen.com" },
   { name: "Sora", cat: "video", logo: "🌅", color: "#0c4a6e", badge: "new", free: false,
-    desc: "OpenAI's groundbreaking text-to-video model. Generate cinematic, realistic videos from prompts.",
-    tags: ["OpenAI", "Text-to-video", "Cinematic"], url: "https://sora.com" },
-  { name: "CapCut AI", cat: "video", logo: "✂️", color: "#000000", badge: "free", free: true,
-    desc: "Popular video editor with AI features: auto-captions, smart cut, background removal and effects.",
-    tags: ["Free", "Social media", "Auto-caption"], url: "https://www.capcut.com" },
+    desc: "OpenAI's groundbreaking text-to-video model generating cinematic, realistic 60-second videos from text prompts. A paradigm shift in video creation technology.",
+    tags: ["OpenAI", "Cinematic", "60s clips"], url: "https://sora.com" },
+  { name: "CapCut", cat: "video", logo: "✂️", color: "#000000", badge: "free", free: true,
+    desc: "ByteDance's free video editor with powerful AI: auto-captions, smart cut, background removal, AI effects, and templates optimized for TikTok, Reels, and YouTube Shorts.",
+    tags: ["TikTok", "Auto-caption", "Templates"], url: "https://www.capcut.com" },
+  { name: "Pika Labs", cat: "video", logo: "🥚", color: "#fbbf24", badge: "hot", free: true,
+    desc: "AI video generation platform with an intuitive interface. Turn text, images, or existing videos into new clips. Features include lip-sync, style transfer, and video expansion.",
+    tags: ["Lip-sync", "Style transfer", "Easy"], url: "https://pika.art" },
+  { name: "Synthesia", cat: "video", logo: "🎙️", color: "#0284c7", badge: "paid", free: false,
+    desc: "Enterprise AI video platform with 140+ AI avatars speaking 120+ languages. Create professional training, how-to, and marketing videos without cameras or studios.",
+    tags: ["Enterprise", "140+ avatars", "Training"], url: "https://www.synthesia.io" },
+  { name: "Luma AI", cat: "video", logo: "📷", color: "#4f46e5", badge: "new", free: true,
+    desc: "Create stunning 3D captures and AI-generated videos from your phone. Dream Machine turns text and images into realistic, cinematic video sequences in minutes.",
+    tags: ["3D", "Photorealistic", "Mobile"], url: "https://lumalabs.ai" },
 
-  // CODING
+  // CODING — 7
   { name: "GitHub Copilot", cat: "code", logo: "🐙", color: "#24292e", badge: "hot", free: false,
-    desc: "AI pair programmer by GitHub. Suggests whole lines and functions in your IDE in real time.",
-    tags: ["VS Code", "Code gen", "GitHub"], url: "https://github.com/features/copilot" },
+    desc: "The original AI pair programmer. Suggests whole functions, explains code, fixes bugs, and writes tests across VS Code, JetBrains, Neovim, and GitHub.com.",
+    tags: ["VS Code", "JetBrains", "Chat"], url: "https://github.com/features/copilot" },
   { name: "Cursor", cat: "code", logo: "💻", color: "#1a1a1a", badge: "hot", free: true,
-    desc: "AI-first code editor built on VS Code. Chat with your codebase, generate and refactor code.",
-    tags: ["Editor", "Chat", "Free tier"], url: "https://www.cursor.com" },
-  { name: "Replit AI", cat: "code", logo: "🔧", color: "#f97316", badge: "new", free: true,
-    desc: "Build, run and deploy apps with AI in the browser. No setup required — code anywhere.",
-    tags: ["Browser", "Deploy", "Beginner-friendly"], url: "https://replit.com" },
+    desc: "AI-first code editor built on VS Code. Chat with your entire codebase, get multi-file edits, inline code generation, and terminal commands explained in plain language.",
+    tags: ["Codebase chat", "Multi-file", "Free"], url: "https://www.cursor.com" },
+  { name: "Windsurf", cat: "code", logo: "🌊", color: "#2563eb", badge: "new", free: true,
+    desc: "Codeium's AI-powered IDE with Cascade — an agent that understands your project, writes multi-file features, and runs terminal commands to complete tasks autonomously.",
+    tags: ["Agent", "Autonomous", "Multi-file"], url: "https://codeium.com/windsurf" },
+  { name: "Replit", cat: "code", logo: "🔧", color: "#f97316", badge: "free", free: true,
+    desc: "Browser-based development environment with built-in AI. Code, run, and deploy full-stack apps in your browser. No setup, no config — just start building instantly.",
+    tags: ["Browser", "Deploy", "Beginner"], url: "https://replit.com" },
+  { name: "v0 by Vercel", cat: "code", logo: "🅥", color: "#000000", badge: "hot", free: true,
+    desc: "Generate production-ready React/Next.js UI components from text prompts. Copy-paste ready code with Tailwind CSS and shadcn/ui. Revolutionizing frontend development.",
+    tags: ["UI gen", "React", "Tailwind"], url: "https://v0.dev" },
+  { name: "Bolt.new", cat: "code", logo: "⚡", color: "#facc15", badge: "new", free: true,
+    desc: "Prompt, edit, and deploy full-stack web apps entirely in the browser. Stackblitz-powered IDE with AI that builds complete apps including backend, database, and deployment.",
+    tags: ["Full-stack", "Deploy", "Browser"], url: "https://bolt.new" },
   { name: "Tabnine", cat: "code", logo: "⌨️", color: "#6366f1", badge: "free", free: true,
-    desc: "AI code completion for 80+ languages. Privacy-first, runs locally or on your own server.",
-    tags: ["Privacy", "Multi-language", "IDE plugin"], url: "https://www.tabnine.com" },
+    desc: "Privacy-focused AI code completion for 80+ languages. Runs on-device or on your own servers — your code never leaves your environment. SOC 2 compliant.",
+    tags: ["Privacy", "On-device", "SOC2"], url: "https://www.tabnine.com" },
 
-  // PRODUCTIVITY
+  // PRODUCTIVITY — 6
   { name: "Notion AI", cat: "productivity", logo: "📒", color: "#000000", badge: "new", free: false,
-    desc: "AI built into Notion — summarize, translate, auto-fill and write within your workspace.",
-    tags: ["Workspace", "Notes", "Database"], url: "https://www.notion.so/product/ai" },
+    desc: "AI-powered workspace: summarize meetings, draft docs, translate content, and auto-fill databases. Unifies notes, wikis, projects, and calendars with AI assistance throughout.",
+    tags: ["All-in-one", "Docs", "Database"], url: "https://www.notion.so/product/ai" },
   { name: "Otter.ai", cat: "productivity", logo: "🎙️", color: "#6366f1", badge: "free", free: true,
-    desc: "Real-time meeting transcription and AI meeting notes. Syncs with Zoom, Meet and Teams.",
-    tags: ["Transcription", "Meetings", "Zoom"], url: "https://otter.ai" },
+    desc: "Real-time meeting transcription and AI-generated summaries. Automatically joins your Zoom, Google Meet, and Teams calls. Searchable, shareable notes with speaker identification.",
+    tags: ["Transcription", "Meetings", "Summaries"], url: "https://otter.ai" },
   { name: "Reclaim.ai", cat: "productivity", logo: "🗓️", color: "#2563eb", badge: "new", free: true,
-    desc: "AI calendar optimizer that auto-schedules tasks, habits and meetings around your priorities.",
-    tags: ["Calendar", "Scheduling", "Focus time"], url: "https://reclaim.ai" },
+    desc: "AI calendar optimizer that auto-schedules tasks, habits, routines, and meetings around your real priorities. Defends focus time and finds optimal meeting slots.",
+    tags: ["Calendar", "Focus time", "Auto-schedule"], url: "https://reclaim.ai" },
+  { name: "Mem", cat: "productivity", logo: "🧩", color: "#8b5cf6", badge: "free", free: true,
+    desc: "AI-powered note-taking that auto-organizes everything. No folders, no tags — just write. Mem surfaces relevant notes exactly when you need them using AI context awareness.",
+    tags: ["Auto-organize", "Notes", "Context"], url: "https://get.mem.ai" },
+  { name: "Gamma", cat: "productivity", logo: "📊", color: "#7c3aed", badge: "free", free: true,
+    desc: "Create beautiful presentations, documents, and webpages with AI in seconds. Just describe what you need or paste an outline — Gamma generates polished decks instantly.",
+    tags: ["Presentations", "Decks", "Documents"], url: "https://gamma.app" },
+  { name: "Tome", cat: "productivity", logo: "📖", color: "#ec4899", badge: "free", free: true,
+    desc: "AI storytelling tool that creates compelling presentations, pitch decks, and one-pagers from a single prompt. Includes AI image generation and data visualization.",
+    tags: ["Pitch decks", "Storytelling", "Visuals"], url: "https://tome.app" },
 
-  // SEO & MARKETING
-  { name: "Surfer SEO", cat: "seo", logo: "📈", color: "#06b6d4", badge: "hot", free: false,
-    desc: "AI content editor that analyzes top-ranking pages and tells you exactly how to outrank them.",
-    tags: ["SEO", "Content", "SERP analysis"], url: "https://surferseo.com" },
-  { name: "AdCreative.ai", cat: "seo", logo: "📢", color: "#ef4444", badge: "hot", free: false,
-    desc: "Generate conversion-optimized ad creatives in seconds. Supports Facebook, Google and display ads.",
-    tags: ["Ads", "Creative", "Facebook"], url: "https://www.adcreative.ai" },
+  // SEO & MARKETING — 6
+  { name: "Surfer SEO", cat: "seo", logo: "📈", color: "#06b6d4", badge: "paid", free: false,
+    desc: "AI content editor that analyzes top 50 ranking pages and provides real-time optimization guidance. Know exactly what to write to outrank competitors on Google SERPs.",
+    tags: ["SERP analysis", "Content score", "Outrank"], url: "https://surferseo.com" },
+  { name: "SEMrush", cat: "seo", logo: "🔬", color: "#ff6a00", badge: "paid", free: false,
+    desc: "All-in-one digital marketing suite: keyword research, competitor analysis, backlink audit, content marketing, and PPC. The industry standard for SEO professionals.",
+    tags: ["Keyword", "Competitor", "Backlink"], url: "https://www.semrush.com" },
+  { name: "Ahrefs", cat: "seo", logo: "🕷️", color: "#2563eb", badge: "paid", free: false,
+    desc: "Powerful SEO toolset with the largest backlink index in the industry. Site audit, keyword explorer, content explorer, and rank tracker for data-driven SEO strategy.",
+    tags: ["Backlink", "Site audit", "Rank tracker"], url: "https://ahrefs.com" },
+  { name: "AdCreative.ai", cat: "seo", logo: "📢", color: "#ef4444", badge: "paid", free: false,
+    desc: "AI that generates hundreds of conversion-optimized ad creatives in seconds. Supports Facebook, Instagram, Google, LinkedIn, and display ads with A/B testing built-in.",
+    tags: ["Ad creatives", "A/B test", "Multi-platform"], url: "https://www.adcreative.ai" },
+  { name: "Jasper Brand Voice", cat: "seo", logo: "🎯", color: "#7c3aed", badge: "paid", free: false,
+    desc: "Jasper's brand voice feature ensures all AI-generated marketing content matches your company's unique tone, style guide, and messaging across every channel.",
+    tags: ["Brand voice", "Consistency", "Multi-channel"], url: "https://www.jasper.ai" },
+  { name: "Reply.io", cat: "seo", logo: "📧", color: "#2563eb", badge: "paid", free: false,
+    desc: "AI-powered sales engagement platform. Automate personalized email sequences with AI that writes custom messages based on each prospect's profile and behavior.",
+    tags: ["Sales", "Email", "Personalization"], url: "https://reply.io" },
 
-  // AUDIO
+  // AUDIO & VOICE — 5
   { name: "ElevenLabs", cat: "audio", logo: "🔊", color: "#6d28d9", badge: "hot", free: true,
-    desc: "Ultra-realistic AI voice synthesis and cloning. Create voiceovers in 29 languages.",
-    tags: ["Voice", "TTS", "Clone"], url: "https://elevenlabs.io" },
-  { name: "Suno", cat: "audio", logo: "🎵", color: "#ec4899", badge: "new", free: true,
-    desc: "Generate full songs with vocals and instrumentation from a text prompt. Incredibly fun.",
-    tags: ["Music gen", "Vocals", "Free"], url: "https://suno.com" },
+    desc: "Industry-leading AI voice synthesis with ultra-realistic text-to-speech. Clone voices from 60-second samples. 29 languages, voice design, and dubbing studio included.",
+    tags: ["Voice clone", "TTS", "29 languages"], url: "https://elevenlabs.io" },
+  { name: "Suno", cat: "audio", logo: "🎵", color: "#ec4899", badge: "hot", free: true,
+    desc: "Generate complete songs with vocals, lyrics, and instrumentation from a simple text prompt. Choose genres, styles, and structure. V4 produces radio-quality music.",
+    tags: ["Music gen", "Vocals", "Songwriting"], url: "https://suno.com" },
   { name: "Descript", cat: "audio", logo: "🎚️", color: "#7c3aed", badge: "free", free: true,
-    desc: "Edit audio and video by editing text. Remove filler words, clone your voice and more.",
-    tags: ["Podcast", "Video edit", "Voice clone"], url: "https://www.descript.com" },
+    desc: "Edit audio and video by editing text. Remove filler words with one click, clone your voice for corrections, and create studio-quality podcasts and videos effortlessly.",
+    tags: ["Podcast", "Text-based edit", "Filler removal"], url: "https://www.descript.com" },
+  { name: "Udio", cat: "audio", logo: "🎹", color: "#8b5cf6", badge: "new", free: true,
+    desc: "AI music generator by former Google DeepMind researchers. Create professional-quality tracks with natural vocals, custom lyrics, and genre mixing across 30+ styles.",
+    tags: ["Music", "DeepMind", "Genres"], url: "https://www.udio.com" },
+  { name: "Murf AI", cat: "audio", logo: "🎤", color: "#f97316", badge: "free", free: true,
+    desc: "AI voiceover studio with 120+ natural-sounding voices in 20+ languages. Perfect for e-learning, explainer videos, podcasts, and presentations with background music sync.",
+    tags: ["Voiceover", "E-learning", "120+ voices"], url: "https://murf.ai" },
 
-  // BUSINESS
-  { name: "Typeform AI", cat: "business", logo: "📋", color: "#262627", badge: "new", free: true,
-    desc: "Build smart forms and surveys with AI. Analyze responses and generate insights automatically.",
-    tags: ["Forms", "Survey", "Analytics"], url: "https://www.typeform.com" },
+  // BUSINESS — 6
   { name: "Zapier AI", cat: "business", logo: "⚡", color: "#ff4a00", badge: "hot", free: true,
-    desc: "Automate your workflows with 6,000+ app integrations. AI helps build automations in plain English.",
-    tags: ["Automation", "No-code", "6000+ apps"], url: "https://zapier.com/ai" },
+    desc: "Automate workflows across 7,000+ apps with no code. Describe what you want in plain English and AI builds the automation for you. Connect everything you use.",
+    tags: ["Automation", "No-code", "7000+ apps"], url: "https://zapier.com/ai" },
+  { name: "Make", cat: "business", logo: "🔗", color: "#6d28d9", badge: "free", free: true,
+    desc: "Visual automation platform (formerly Integromat) with a drag-and-drop scenario builder. More powerful than Zapier for complex workflows with branching logic and data transformation.",
+    tags: ["Visual builder", "Complex logic", "API"], url: "https://www.make.com" },
+  { name: "Typeform", cat: "business", logo: "📋", color: "#262627", badge: "free", free: true,
+    desc: "Create beautiful, conversational forms and surveys. AI helps generate questions, analyze responses, and surface insights. 120+ integrations for seamless data flow.",
+    tags: ["Forms", "Survey", "Conversational"], url: "https://www.typeform.com" },
+  { name: "Jotform AI", cat: "business", logo: "📝", color: "#10b981", badge: "free", free: true,
+    desc: "Build powerful forms, tables, and apps with AI. Thousands of templates plus an AI form builder that creates complete workflows from a simple description.",
+    tags: ["Forms", "Apps", "Templates"], url: "https://www.jotform.com" },
+  { name: "Zendesk AI", cat: "business", logo: "💬", color: "#03363d", badge: "paid", free: false,
+    desc: "AI-powered customer service platform. Auto-resolve tickets, suggest help center articles, detect sentiment, and route inquiries intelligently to the right team.",
+    tags: ["Customer service", "Tickets", "AI agents"], url: "https://www.zendesk.com" },
+  { name: "Intercom Fin", cat: "business", logo: "💎", color: "#0061ff", badge: "paid", free: false,
+    desc: "AI customer support agent that resolves up to 50% of inquiries instantly. Trained on your help content, it provides accurate, personalized answers in any language.",
+    tags: ["Support bot", "Auto-resolve", "Multilingual"], url: "https://www.intercom.com/fin" },
+
+  // DATA & ANALYTICS — 5
+  { name: "Julius AI", cat: "data", logo: "📊", color: "#2563eb", badge: "free", free: true,
+    desc: "Chat with your data using natural language. Upload spreadsheets, ask questions, and get instant visualizations, statistical analysis, and insights — no SQL or Python needed.",
+    tags: ["Spreadsheets", "Charts", "No-code"], url: "https://julius.ai" },
+  { name: "Rows", cat: "data", logo: "📋", color: "#000000", badge: "free", free: true,
+    desc: "Next-gen spreadsheet with built-in AI, API integrations, and beautiful charts. Pull live data from 50+ services directly into cells and analyze with AI assistance.",
+    tags: ["Spreadsheet", "API", "Live data"], url: "https://rows.com" },
+  { name: "Tableau AI", cat: "data", logo: "📈", color: "#1a73e8", badge: "paid", free: false,
+    desc: "Salesforce's AI-powered analytics platform. Ask questions in plain English, get automated insights, and create interactive dashboards with predictive analytics built in.",
+    tags: ["Dashboards", "Predictive", "Enterprise"], url: "https://www.tableau.com" },
+  { name: "Polymer", cat: "data", logo: "🧬", color: "#8b5cf6", badge: "free", free: true,
+    desc: "AI that transforms spreadsheets into interactive dashboards instantly. Embed analytics into your product or share beautiful, auto-updating reports with stakeholders.",
+    tags: ["Dashboards", "Auto-update", "Embed"], url: "https://www.polymersearch.com" },
+  { name: "Coefficient", cat: "data", logo: "📡", color: "#2563eb", badge: "free", free: true,
+    desc: "Connect Google Sheets to SaaS platforms in real-time, no code required. Pull data from Salesforce, HubSpot, Stripe, and 50+ others — then analyze with built-in AI.",
+    tags: ["Google Sheets", "Live sync", "No-code"], url: "https://www.coefficient.io" },
+
+  // EDUCATION — 5
+  { name: "Khanmigo", cat: "education", logo: "🏫", color: "#14a800", badge: "paid", free: false,
+    desc: "Khan Academy's AI tutor powered by GPT-4. Guides students through math, science, and humanities with Socratic questioning — never giving answers, always building understanding.",
+    tags: ["Tutoring", "K-12", "Socratic"], url: "https://www.khanacademy.org/khan-labs" },
+  { name: "Duolingo Max", cat: "education", logo: "🦉", color: "#58cc02", badge: "paid", free: false,
+    desc: "Language learning with GPT-4 powered features: Roleplay conversations with AI characters and Explain My Answer for personalized grammar feedback in real-time.",
+    tags: ["Languages", "Roleplay", "GPT-4"], url: "https://duolingo.com/max" },
+  { name: "Quizlet Q-Chat", cat: "education", logo: "🎓", color: "#4255ff", badge: "free", free: true,
+    desc: "AI tutor that quizzes you on any subject using Socratic dialogue. Upload your study materials and Q-Chat creates personalized practice sessions that adapt to your level.",
+    tags: ["Flashcards", "Quiz", "Adaptive"], url: "https://quizlet.com/features/qchat" },
+  { name: "Elicit", cat: "education", logo: "🔬", color: "#6366f1", badge: "free", free: true,
+    desc: "AI research assistant for academic literature review. Find relevant papers, extract key findings, compare methodologies, and synthesize insights across hundreds of studies.",
+    tags: ["Research", "Papers", "Literature review"], url: "https://elicit.com" },
+  { name: "Consensus", cat: "education", logo: "📚", color: "#4f46e5", badge: "free", free: true,
+    desc: "AI search engine for scientific research. Ask any question and get answers backed by peer-reviewed studies. See what the scientific consensus actually says, with citations.",
+    tags: ["Research", "Peer-reviewed", "Citations"], url: "https://consensus.app" },
+
+  // E-COMMERCE — 4
+  { name: "Shopify Magic", cat: "ecommerce", logo: "🛒", color: "#96bf48", badge: "free", free: true,
+    desc: "Shopify's built-in AI toolkit: auto-generate product descriptions, edit product photos, create email campaigns, and get AI-powered customer support — all within your store.",
+    tags: ["Shopify", "Product desc", "Emails"], url: "https://www.shopify.com/magic" },
+  { name: "Jasper E-commerce", cat: "ecommerce", logo: "📦", color: "#7c3aed", badge: "paid", free: false,
+    desc: "Generate hundreds of unique, SEO-optimized product descriptions at scale. Perfect for dropshipping stores, Amazon sellers, and large e-commerce catalogs.",
+    tags: ["Product desc", "Bulk", "Amazon"], url: "https://www.jasper.ai" },
+  { name: "Vista Social", cat: "ecommerce", logo: "📱", color: "#2563eb", badge: "free", free: true,
+    desc: "AI-powered social media management for e-commerce brands. Schedule posts, generate captions, analyze performance, and manage all platforms from a single dashboard.",
+    tags: ["Social media", "Scheduling", "Analytics"], url: "https://vistasocial.com" },
+  { name: "Tidio Lyro", cat: "ecommerce", logo: "🤝", color: "#22c55e", badge: "free", free: true,
+    desc: "AI chatbot for e-commerce stores that handles up to 70% of customer questions automatically. Integrates with Shopify, WooCommerce, and major e-commerce platforms.",
+    tags: ["Chatbot", "Customer service", "Automation"], url: "https://www.tidio.com" },
 ];
 
 // ── RENDER ──────────────────────────────────────────────────────
