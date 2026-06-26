@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submit a Tool – HuPlus.asia</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --accent: #2563eb; --text: #1a1d23; --muted: #6b7280; --border: #e4e7ec; --surface: #fff; --bg: #f7f8fa; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); font-size: 15px; }
+    nav { background: var(--surface); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: 800px; margin: 0 auto; padding: 0 20px; height: 56px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-size: 18px; font-weight: 700; color: var(--accent); text-decoration: none; }
+    .logo span { color: var(--text); }
+    .content { max-width: 560px; margin: 0 auto; padding: 48px 20px; }
+    h1 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+    .subtitle { color: var(--muted); margin-bottom: 36px; font-size: 14px; }
+    label { display: block; font-size: 13px; font-weight: 500; margin-bottom: 6px; }
+    input, select, textarea { width: 100%; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; font-family: inherit; background: var(--surface); color: var(--text); margin-bottom: 20px; outline: none; }
+    input:focus, select:focus, textarea:focus { border-color: var(--accent); }
+    textarea { height: 90px; resize: vertical; }
+    .submit-btn { background: var(--accent); color: #fff; border: none; padding: 11px 28px; border-radius: 8px; font-size: 14px; font-weight: 500; cursor: pointer; width: 100%; }
+    .note { font-size: 12px; color: var(--muted); margin-top: 16px; text-align: center; }
+    footer { text-align: center; padding: 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); margin-top: 48px; }
+  </style>
+</head>
+<body>
+<nav><div class="nav-inner"><a class="logo" href="index.html">Hu<span>Plus</span></a><a href="index.html" style="color:var(--muted);text-decoration:none;font-size:13px;">← Back</a></div></nav>
+<div class="content">
+  <h1>Submit an AI Tool</h1>
+  <p class="subtitle">Know a great AI tool missing from our directory? Tell us about it — we review every submission.</p>
+  <!-- 将 action 替换为 Formspree 表单地址，免费，零后端 -->
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <label>Tool Name *</label>
+    <input type="text" name="tool_name" required placeholder="e.g. MagicWrite AI" />
+    <label>Website URL *</label>
+    <input type="url" name="url" required placeholder="https://..." />
+    <label>Category *</label>
+    <select name="category" required>
+      <option value="">Select category...</option>
+      <option>Writing</option>
+      <option>Image &amp; Design</option>
+      <option>Video</option>
+      <option>Coding</option>
+      <option>Productivity</option>
+      <option>Chatbot</option>
+      <option>SEO &amp; Marketing</option>
+      <option>Audio &amp; Voice</option>
+      <option>Business</option>
+      <option>Other</option>
+    </select>
+    <label>Pricing</label>
+    <select name="pricing">
+      <option>Free</option>
+      <option>Freemium</option>
+      <option>Paid</option>
+    </select>
+    <label>Short Description *</label>
+    <textarea name="description" required placeholder="What does this tool do? Who is it for? (2-3 sentences)"></textarea>
+    <label>Your Email (optional)</label>
+    <input type="email" name="email" placeholder="We'll notify you when it's listed" />
+    <button class="submit-btn" type="submit">Submit for Review →</button>
+    <p class="note">We review submissions within 3-5 business days. We don't accept payment for listings.</p>
+  </form>
+</div>
+<footer>© 2026 HuPlus.asia · <a href="index.html" style="color:var(--muted);">Home</a></footer>
+</body>
+</html>
